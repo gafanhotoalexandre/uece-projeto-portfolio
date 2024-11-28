@@ -12,13 +12,20 @@
   </head>
   <body>
     <div class="container">
-      <header class="section">
+      <header class="section visible">
         <div class="header-profile">
-          <img
-            src="https://github.com/gafanhotoalexandre.png"
-            alt="Alexandre Martins"
-            class="profile-image"
-          />
+          <a
+            href="https://github.com/gafanhotoalexandre"
+            target="”_blank”"
+            rel="”noopener"
+            noreferer”
+          >
+            <img
+              src="https://github.com/gafanhotoalexandre.png"
+              alt="Alexandre Martins"
+              class="profile-image"
+            />
+          </a>
           <div class="header-text">
             <h1>Alexandre Martins</h1>
             <p>Desenvolvedor Full Stack</p>
@@ -32,7 +39,7 @@
         </div>
       </header>
 
-      <section class="section" id="projetos">
+      <section class="section visible" id="projetos">
         <h2 class="section-title">Projetos</h2>
         <div class="projects">
           <div class="project-card">
@@ -68,7 +75,7 @@
         </div>
       </section>
 
-      <section class="section" id="habilidades">
+      <section class="section visible" id="habilidades">
         <h2 class="section-title">Habilidades</h2>
         <div class="skills-grid">
           <div class="skill-category">
@@ -87,7 +94,7 @@
       </section>
     </div>
 
-    <script>
+    <!-- <script>
       const sections = document.querySelectorAll('.section')
       const observerOptions = {
         threshold: 0.1,
@@ -104,6 +111,6 @@
       sections.forEach((section) => {
         observer.observe(section)
       })
-    </script>
+    </script> -->
   </body>
 </html>
