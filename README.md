@@ -1,6 +1,6 @@
 # Projeto Portfólio
 
-![Projeto Portfólio](https://img.shields.io/badge/status-completo-brightgreen)  
+![Projeto Portfólio](https://img.shields.io/badge/status-incompleto-red)  
 Um portfólio pessoal desenvolvido para apresentar meus projetos, habilidades e informações profissionais de forma visualmente atraente e responsiva.
 
 ## 🛠 Tecnologias Utilizadas
