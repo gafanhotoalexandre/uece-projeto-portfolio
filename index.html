@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alexandre Martins - Desenvolvedor Full Stack</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="section">
+        <div class="header-profile">
+          <img
+            src="https://github.com/gafanhotoalexandre.png"
+            alt="Alexandre Martins"
+            class="profile-image"
+          />
+          <div class="header-text">
+            <h1>Alexandre Martins</h1>
+            <p>Desenvolvedor Full Stack</p>
+          </div>
+        </div>
+        <div class="intro">
+          <p>
+            Especializado em criar experiências digitais excepcionais com React
+            e Spring Boot. Focado em código limpo e soluções escaláveis.
+          </p>
+        </div>
+      </header>
+
+      <section class="section" id="projetos">
+        <h2 class="section-title">Projetos</h2>
+        <div class="projects">
+          <div class="project-card">
+            <h3 class="project-title">PixelVelvet</h3>
+            <p>Aplicação web de transformação de imagens utilizando IA.</p>
+            <div class="project-stack">
+              <span class="stack-tag">Next.js</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">MongoDB</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">DevNotes</h3>
+            <p>
+              Sistema desenvolvido para simplificar a organização das suas notas
+              de forma eficaz.
+            </p>
+            <div class="project-stack">
+              <span class="stack-tag">React.js</span>
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">Tailwind</span>
+            </div>
+          </div>
+          <div class="project-card">
+            <h3 class="project-title">Shorts Synth</h3>
+            <p>Ferramenta de resumos automáticos de vídeos do YouTube.</p>
+            <div class="project-stack">
+              <span class="stack-tag">TypeScript</span>
+              <span class="stack-tag">Vite</span>
+              <span class="stack-tag">HTML</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="habilidades">
+        <h2 class="section-title">Habilidades</h2>
+        <div class="skills-grid">
+          <div class="skill-category">
+            <h3>Frontend</h3>
+            <p>ReactJS, NextJS, TypeScript, TailwindCSS</p>
+          </div>
+          <div class="skill-category">
+            <h3>Backend</h3>
+            <p>Spring Boot, Java, Kotlin, Laravel, PHP</p>
+          </div>
+          <div class="skill-category">
+            <h3>Ferramentas</h3>
+            <p>Git, Docker, VS Code, IntelliJ</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script>
+      const sections = document.querySelectorAll('.section')
+      const observerOptions = {
+        threshold: 0.1,
+      }
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('visible')
+          }
+        })
+      }, observerOptions)
+
+      sections.forEach((section) => {
+        observer.observe(section)
+      })
+    </script>
+  </body>
+</html>
